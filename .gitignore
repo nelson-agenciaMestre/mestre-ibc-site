@@ -1,0 +1,14 @@
+# Apple Files #
+###################
+**/.DS_Store
+**/_MACOSX
+
+# SASS Cache #
+####################
+html/.sass-cache
+
+# General Files #
+####################
+**/__files
+**/html/node_modules
+html.rar

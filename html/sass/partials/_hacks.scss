@@ -1,0 +1,20 @@
+//hacks
+.ie11, .ie10, .ie9 {
+
+}
+.ie9 {
+
+}
+.win.gecko {
+
+}
+
+@-moz-document url-prefix() { 
+	form button{
+		padding-left:10px;
+	}
+	aside.compartilhar button::after{
+		letter-spacing: 0.5px;
+		margin-top:47px;
+	}
+}

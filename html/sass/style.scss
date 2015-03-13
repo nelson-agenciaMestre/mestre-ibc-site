@@ -1,0 +1,343 @@
+/*DESENVOLVIDO POR AGÊNCIA MESTRE*/
+@import 'partials/variables';
+@import 'partials/reset';
+@import 'partials/elementos';
+body{
+	min-width:$width-fix;
+	font-family: $openSans;
+}
+header{
+	height:165px;
+	width: 100%;
+	background: $White;
+	position:relative;
+	border-bottom:5px solid $Eden;
+	z-index:10;
+	h1, span.logo{
+		display:inline-block;
+		width:190px;
+		height:69px;
+		margin-top:18px;
+		a{
+			display:block;
+			width:100%;
+			height:100%;
+			text-indent:-9999px;
+			background-image: url('../images/icons/logo-icons.png');
+			background-repeat: no-repeat;
+			background-position:-2px -147px; 
+		}
+	}
+	ul.topo{
+		float:right;
+		right:0;
+		display:block;
+		margin:0 auto;
+		li{
+			font-size:$fontPadrao;
+			display:inline-block;
+			text-transform:uppercase;
+			font-weight:600;
+			color: $White;
+			height:39px;
+			vertical-align:top;
+			padding-top:10px;
+			position:relative;
+			margin-left:30px;
+			a{
+				vertical-align:middle;
+				&:hover{
+					@include opacity (0.85);
+					@include transition ($tranAll);
+				}
+				&:before{
+					content:'';
+					background-image: url('../images/icons/sprites-icons.png');
+					background-repeat: no-repeat;
+					position:absolute;
+					display:block;
+					margin-top:4px;
+				}
+			}
+			&:first-child{
+				margin-left:0px;
+				color: $Eden;
+				font-weight:700;
+				b{
+					color:$Elephant;
+					font-size:$fontPadrao + 2;
+					font-weight:700;
+				}
+				a::before{
+					width:13px;
+					height:13px;
+					background-position:0px 0px;
+					margin-left:-16px;
+				}
+			}
+			&:last-child{
+				color: $Elephant;
+				font-size:$fontPadrao - 1;
+				margin-left:30px + 14px + 7px;
+				a::before{
+					width:14px;
+					height:17px;
+					background-position: -34px 0px;
+					margin-left: -(14px + 7px);
+					margin-top:0px;
+				}
+			}
+			&:nth-child(2){
+				font-size:$fontPadrao - 1;
+				background: $CloudBurst;
+				@include border-radius (0px 0px 4px 4px);
+				@include transition ($tranDesce);
+				cursor:pointer;
+				padding-top:0px;
+				span{
+					width:170px;
+					height:39px;
+					display:block;
+					padding:0px 17px;
+					a{
+						padding-top:10px;
+						display:block;
+					}
+				}
+				a::before{
+					@include icoSetaDown;
+					float:right;
+					right:18px;
+					margin-top:2px;
+				}
+				&.do-ativo{
+					margin-top:500px;
+					a::before{
+						@include flipY;
+					}
+				}
+			}
+		}
+	}
+	nav{
+		background:$CloudBurst;
+		position:absolute;
+		width:100%;
+		height:50px;
+		bottom:0;
+		ul{
+			width: $width-fix;
+			padding:0px 10px;
+			margin: 0 auto;
+		}
+		li{
+			color: $White;
+			padding:0px 5px 0px 6px;
+			display:inline-block;
+			height:50px;
+			position:relative;
+			&:before{
+				content:'';
+				display:block;
+				position:absolute;
+				left:0;
+				background: $Rhino;
+				width:1px;
+				height:17px;
+				margin-top:  (50px - (17px + 4px)) / 2;
+			}
+			&:first-child{
+				&:before{
+					display:none;
+				}
+				a{
+					padding-right:40px;
+					@include border-radius (2px 2px 0px 0px);
+					&:after{
+						content:'';
+						display:block;
+						position:absolute;
+						@include icoSetaDown;
+						right:13px;
+						top:13px;
+					}
+					&:hover{
+						&:after{
+							@include icoSetaDown2;
+						}
+					}
+				}
+			}	
+		}
+		li a{
+			font-size: $fontPadrao - 1;
+			display:block;
+			height:40px;
+			line-height:40px;
+			margin-top:4px;
+			text-transform:uppercase;
+			background: transparent;
+			padding:0 15px;
+			position:relative;
+			@include border-radius (2px);
+			@include transition ($tranMenu);
+			&:hover{
+				background: $Eden;
+			}
+			&.do-ativo{
+				background: $Eden;
+				&:after{
+					@include icoSetaDown2;
+				}
+			}
+		}
+		li{
+			ul{
+				position:absolute;
+				width:420px;
+				padding:0;
+				height:0px;
+				background: $Eden;
+				overflow:hidden;
+				@include transition (0s);
+					li{
+						height: auto;
+						margin-bottom:13px;
+						display:block;
+						@include opacity (0);	
+						@include transition (inherit);
+						&:before, &:after{
+							display:none;
+						}
+						a{
+							font-size: $fontPadrao - 2;
+							line-height: $fontPadrao ;
+							height: auto;
+							padding:0 !important;
+							display:inline-block;
+							width:auto;
+							&:after{
+								display:none !important;
+							}
+							&:before{
+								content:'';
+								position:absolute;
+								bottom:-4px;
+								left:8px;
+								height:1px;
+								width:0px;
+								background: $White;
+								@include transition ($tranAll);
+							}
+							&:hover::before{
+								@include calc(width, '100% - 8px');
+							}
+							
+						}
+					}
+			}
+			&:hover{
+				ul{
+					height:250px;
+					padding:20px 10px;
+					@include transition ($tranDelay);
+					li{
+						@include opacity (1);
+						@include transition ($tranDelay2);
+					}
+				}
+			}
+		}
+	}
+}
+
+header section{
+	position:absolute;
+	top:-498px;
+	left:0;
+	@include transition ($tranDesce);
+	height:500px;
+	overflow:hidden;
+	&.do-ativo{
+		top:0;
+	}
+}
+
+header ~ section{
+	padding-top:70px;
+	padding-bottom:40px;
+	&.destaqueSec{
+		padding-top:0px;
+		& + section{
+			margin-top:125px;
+			padding-top:0px;
+			padding-bottom:0px;
+		}
+	}
+	&.gray{
+		background: $AthensGray;
+		.textTitulo form{
+			display:block;
+		}
+	}
+}
+
+footer{
+	width:100%;
+	min-width: $width-fix;
+	section{
+		background: $CloudBurst;
+		padding:50px 0;
+		& + section{
+			background: $CloudBurst2;
+			padding:20px 0;
+			form{
+				padding:0;
+				label{
+					color: $White;
+					font-size: $fontPadrao;
+					text-transform: uppercase;
+					display:inline-block;
+					margin-left:282px;
+				}
+				input{
+					width:220px;
+					display:inline-block;
+					margin:0 10px;
+				}
+				button{
+					display:inline-block;
+					width:170px;
+					font-size: $fontPadrao;
+					font-weight: 600;
+					line-height: $fontPadrao;
+					height:40px;
+					padding:0 13px;
+					&:after{
+						margin-top:0;
+					}
+					&:active::after{
+						margin-top:0;
+					}
+				}
+			}
+			& + section{
+				background: $BigStone;
+				padding:30px 0;
+				p{
+					margin-left:170px;
+					color: $PoloBlue;
+					font-size: $fontPadrao - 1px;
+					line-height:31px;
+					display:inline-block;
+					vertical-align:middle;
+					margin-right:10px;
+				}
+			}
+		}
+	}
+}
+
+@import 'partials/queries';
+@import 'partials/hacks';
+@import 'partials/fixes';

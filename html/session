@@ -1,0 +1,20 @@
+<NotepadPlus>
+    <Session activeView="1">
+        <mainView activeIndex="0">
+            <File firstVisibleLine="5" xOffset="0" scrollWidth="1480" startPos="1257" endPos="1257" selMode="0" lang="HTML" encoding="-1" filename="C:\wamp\www\projects\mestre-ibc_site\html\index.html" backupFilePath="" originalFileLastModifTimestamp="1425934403" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1480" startPos="123" endPos="123" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\projects\mestre-ibc_site\html\sass\style.scss" backupFilePath="" originalFileLastModifTimestamp="1425934367" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1480" startPos="90" endPos="90" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\projects\mestre-ibc_site\html\sass\partials\_variables.scss" backupFilePath="" originalFileLastModifTimestamp="1425933460" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1480" startPos="113" endPos="113" selMode="0" lang="Javascript" encoding="-1" filename="C:\wamp\www\projects\mestre-ibc_site\html\library\js\scripts.js" backupFilePath="" originalFileLastModifTimestamp="1425932642" />
+        </mainView>
+        <subView activeIndex="0">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="6120" startPos="113" endPos="113" selMode="0" lang="Javascript" encoding="-1" filename="C:\wamp\www\projects\mestre-ibc_site\html\library\js\scripts.js" backupFilePath="" originalFileLastModifTimestamp="1425932642" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="6120" startPos="0" endPos="0" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\projects\mestre-ibc_site\html\sass\style.scss" backupFilePath="" originalFileLastModifTimestamp="1425934367" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="6120" startPos="69" endPos="69" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\projects\mestre-ibc_site\html\sass\partials\_elementos.scss" backupFilePath="" originalFileLastModifTimestamp="1425932766" />
+            <File firstVisibleLine="104" xOffset="0" scrollWidth="6120" startPos="2797" endPos="2797" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\projects\mestre-ibc_site\html\sass\partials\_variables.scss" backupFilePath="" originalFileLastModifTimestamp="1425933460" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="6120" startPos="280" endPos="280" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\projects\mestre-ibc_site\html\sass\partials\_queries.scss" backupFilePath="" originalFileLastModifTimestamp="1421672147" />
+            <File firstVisibleLine="10" xOffset="0" scrollWidth="6120" startPos="1312" endPos="1312" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\projects\mestre-ibc_site\html\sass\partials\_reset.scss" backupFilePath="" originalFileLastModifTimestamp="1425933437" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="6120" startPos="0" endPos="0" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\projects\mestre-ibc_site\html\sass\partials\_fixes.scss" backupFilePath="" originalFileLastModifTimestamp="1421672058" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="6120" startPos="68" endPos="68" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\projects\mestre-ibc_site\html\sass\partials\_hacks.scss" backupFilePath="" originalFileLastModifTimestamp="1425933454" />
+        </subView>
+    </Session>
+</NotepadPlus>
